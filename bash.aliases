@@ -1,4 +1,23 @@
 #!/bin/bash
 # /etc/bash.aliases
 # Global bash aliases included by /etc/bash.bashrc
+
+# Shortcuts
 alias update-all="sudo apt-get update; sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y --purge; sudo apt-get autoclean"
+alias ipt-s="sudo iptables-save > /etc/iptables/rules.v4"
+alias ipt-r="sudo iptables-restore < /etc/iptables/rules.v4"
+alias ip6-s="sudo ip6tables-save > /etc/iptables/rules.v6"
+alias ip6-r="sudo ip6tables-restore < /etc/iptables/rules.v6"
+
+# Default flags
+alias cp="cp -vf"
+alias mv="mv -vf"
+alias rm="rm -vf"
+alias chown="chown -vf"
+alias chmod="chmod -vf"
+alias df="df -h --total"
+alias free="free -m"
+
+# Alternate commands
+alias dd="dcfldd"
+alias top="htop"
