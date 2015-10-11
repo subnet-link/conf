@@ -17,6 +17,8 @@ alias chown="chown -vf"
 alias chmod="chmod -vf"
 alias df="df -h --total"
 alias free="free -m"
+alias netstat="netstat -natp"
+alias blkid="blkid -o list"
 
 # Alternate commands
 alias dd="dcfldd"
